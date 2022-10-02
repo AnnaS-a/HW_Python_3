@@ -7,11 +7,11 @@ n = int(input('Введите количество элементов списк
 num_list = []
 for i in range(n):
     num_list.append(randint(0, 10))
-print(num_list)
+
 sum_num = 0
 for i in range(len(num_list)):
     if i % 2 != 0:
         sum_num += num_list[i]
     else:
         continue    
-print(sum_num)        
+print(num_list, f'сумма элементов, стоящих на нечетных позициях', sum_num)        
